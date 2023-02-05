@@ -13,6 +13,7 @@ body {
 .tour {
   width: 370px;
   background-color: white;
+  border-radius: 20px;
 }
 
 .tour-content {
@@ -47,4 +48,18 @@ body {
   border-radius: 8px;
   line-height: 17px;
   display: inline-block;
+}
+
+.tour-image {
+  border-radius: 5x 5px 0 0;
+}
+
+.tour-list {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
 }
