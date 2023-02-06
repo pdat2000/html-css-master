@@ -11,9 +11,13 @@ body {
 }
 
 .tour {
-  width: 370px;
+  width: calc(33.33% - 30px);
   background-color: white;
   border-radius: 20px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  word-break: break-word;
+  overflow: hidden;
 }
 
 .tour-content {
@@ -31,6 +35,18 @@ body {
 
 .tour-rating {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour-review {
+  display: flex;
+  align-items: center;
+}
+
+.tour-review-count {
+  margin-left: 11px;
 }
 
 .tour-duration,
@@ -52,14 +68,39 @@ body {
 
 .tour-image {
   border-radius: 5x 5px 0 0;
+  width: 100%;
+  height: 239px;
+  object-fit: cover;
+  display: block;
 }
 
-.tour-list {
+.tour-list-container {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.tour-list {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.tour-top {
+  position: relative;
+}
+
+.tour-price {
+  position: absolute;
+  display: inline-block;
+  margin-left: 20px;
+  top: 24px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fcfcfc;
+  background-color: rgba(53, 57, 69, 0.8);
+  padding: 5px 16px;
+  line-height: 20px;
+  border-radius: 4px;
 }
